@@ -12,7 +12,7 @@
       <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
         <li class="nav-item">
           <a class="px-3 py-2 flex items-center text-m uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-            <i class="fa fa-home text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Home</span>
+            <i class="fa fa-home text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Home Tejas</span>
           </a>
         </li>
         <li class="nav-item">
