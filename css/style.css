@@ -1,0 +1,184 @@
+.myblue{
+    background-color: #3c27b9;
+}
+
+.myround{
+    border-bottom-left-radius: 60px;
+border-bottom-right-radius: 60px;
+}
+
+.banner-content {
+    margin-bottom: 82px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cate{
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #00f7ff;
+    text-transform: uppercase;
+    margin-top: 0;
+
+}
+
+
+.banner-content .title {
+    font-size: 50px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mymargin{
+    margin-top:-150px;
+}
+
+.subtitle{
+    font-weight: 600;
+    margin-bottom: 20px;
+ 
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: -14px;
+
+    margin: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    line-height: 1.3;
+    color: #414785;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.banner-counter {
+    justify-content: center;
+    margin: 0 -15px -50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.banner-counter .counter-item {
+    flex-grow: 1;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+
+
+.banner-counter .counter-item .counter-title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+color: #0073e4;
+
+
+
+}
+
+
+
+.banner-counter .counter-item p {
+    font-size: 18px;
+    color: #504c89;
+}
+
+p:last-child {
+    margin-bottom: -7px !important;
+}
+
+p {
+    margin-top: -10px;
+}
+
+
+.counter-item {
+    flex-grow: 1;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+
+
+
+.section-header {
+    max-width: 635px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+h2{
+    color: #414785;
+    font-weight: 600;
+}
+
+.col-sm-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+
+    position: relative;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+
+.how-item {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.how-item .how-thumb {
+    margin-bottom: 40px;
+}
+
+
+.how-item {
+    text-align: center;
+}
+
+.how-item .how-content {
+    font-size: 22px;
+}
+.how-item {
+    text-align: center;
+}
+h6{
+    color: #414785;
+
+}
+h6 {
+    font-size: 18px;
+    margin-top: -7px;
+    font-weight: 500;
+}
+
+.myrow{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+h2 {
+    font-size: 36px !important;
+    line-height: 46px;
+    margin-top: -5px;
+}
+
+
+.hide{
+    display:none;
+}
