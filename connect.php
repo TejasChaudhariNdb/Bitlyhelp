@@ -8,7 +8,7 @@ $base_url='http://bitly.help/u/index.php?redirect=';
 
 
 
-$conn = mysqli_connect("localhost","root","","bitlyhelp");
+$conn = mysqli_connect("localhost",$username,$password,$dbname);
 
 // Check connection
 if (mysqli_connect_errno()) {
