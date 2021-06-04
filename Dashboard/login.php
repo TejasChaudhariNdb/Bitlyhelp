@@ -33,22 +33,22 @@
 
 <center style="margin: 20px;"><span class="title">Bitly.help</span></center>
 
-
+<form action="login_code.php">
 <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col mt-12 max-w-md mx-auto">
 <h5 class="mb-4  text-indigo-500 hover:text-indigo-400 text-center text-2xl font-extrabold text-gray-900">
        Login  to your account
       </h5>
     <div class="mb-4">
       <label class="block text-grey-darker text-sm font-bold mb-2" for="username">
-        Username
+      Email
       </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="username" type="text" placeholder="Username">
+      <input name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="username" type="text" placeholder="Email" required/>
     </div>
     <div class="mb-6">
       <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
         Password
       </label>
-      <input class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="******************">
+      <input name="password" class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="******************" required/>
    
       <a class="inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker float-right" href="#">
         Forgot Password?
@@ -73,7 +73,7 @@
       </a>
 
 </div>
-
+</form>
 </div>
 
 </body>

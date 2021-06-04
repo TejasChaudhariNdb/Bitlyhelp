@@ -1,3 +1,17 @@
+<?php
+
+if(isset($_GET['reff'])){
+  $reff = $_GET['reff'];
+
+}else{
+  $reff = null;
+
+}
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +49,7 @@
 
 <center style="margin-top: 20px;"><span class="title">Bitly.help</span></center>
 
-
+<form action="authenticate.php" method="post">
 <div class="bg-white shadow-md rounded px-8 pt-5 pb-8 mb-4 flex flex-col mt-7 max-w-md mx-auto">
 <h5 class="mb-4  text-indigo-500 hover:text-indigo-400 text-center text-2xl font-extrabold text-gray-900">
        Create New account
@@ -44,24 +58,25 @@
       <label class="block text-grey-darker text-sm font-bold mb-2" for="email">
         Email
       </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email" type="text" placeholder="Username">
+      <input name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email" type="email" placeholder="tejas@gmail.com" required />
     </div>
     <div class="mb-4">
       <label class="block text-grey-darker text-sm font-bold mb-2" for="username">
        Name
       </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="name" type="text" placeholder="Username">
+      <input name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="name" type="text" placeholder="Name" required />
     </div>
     <div class="mb-6">
       <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
         Password
       </label>
-      <input class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="******************">
+      <input name="password" class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="******************" required />
    
       <a class="inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker float-right" href="#">
         Forgot Password?
       </a>
     </div>
+    <input name="referral_code" value="<?php echo $reff;?>" hidden/>
     
     <div>
         <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
@@ -81,7 +96,7 @@ Already have account
       </a>
 
 </div>
-
+</form>
 </div>
 
 </body>

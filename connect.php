@@ -1,10 +1,17 @@
 <?php
 
 $servername = 'localhost';
-$username = 'u323335931_tejas';
-$password = 'Games@1234';
-$dbname = 'u323335931_bitlyhelp';
-$base_url='http://bitly.help/u/index.php?redirect='; 
+$username = 'root';
+$password = '';
+$dbname = 'bitlyhelp';
+$base_url='http://bitly.help/u/?redirect='; 
+
+
+// $servername = 'localhost';
+// $username = 'u323335931_tejas';
+// $password = 'Games@1234';
+// $dbname = 'u323335931_bitlyhelp';
+// $base_url='http://bitly.help/u/index.php?redirect='; 
 
 
 

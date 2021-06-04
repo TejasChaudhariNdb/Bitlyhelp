@@ -1,3 +1,9 @@
+<?php
+
+include("auth_session.php");
+
+?>
+
 <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-indigo-700 ">
   <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
     <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
@@ -22,7 +28,7 @@
           
         </li>
         <li class="nav-item">
-          <a class="px-3 py-2 flex items-center text-m uppercase font-bold leading-snug text-white hover:opacity-75" href="../Dashboard/sign.php">
+          <a class="px-3 py-2 flex items-center text-m uppercase font-bold leading-snug text-white hover:opacity-75" href="../Dashboard/logout.php">
             <i class="fa  fa-sign-out text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Logout</span>
           </a>
         </li>
