@@ -114,7 +114,7 @@ include("navbar.php");
 <div class="bg-white rounded p-3 mb-3 shadow">
 <p class="text-gray-700">The Bitly.help referral program is a great way to spread the word of this great service and to earn even more money with your short links! Refer friends and receive 20% of their earnings for life! </p>
 <div class="link_box bg-gray-200 p-2 rounded mt-3 text-gray-800">
-<pre>https://bitly.help/Dashboard/sign.php?reff=<?php echo $reffer_code;?></pre>
+<code class="text-sm">https://bitly.help/Dashboard/sign.php?reff=<?php echo $reffer_code;?></code>
 </div>
 </div>
 
