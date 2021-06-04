@@ -88,7 +88,7 @@ include("navbar.php");
 
 <div class="mt-5 container">
 
-<p class="text-xl text-gray-600"><b>Links</b></p>
+<p class="text-xl text-gray-600"><b>Hidden Links</b></p>
 <br>
 
 <div class="bg-white border-b border-gray-200 rounded">
@@ -122,7 +122,7 @@ include("navbar.php");
                       </svg>
                     </li>
                     <li class="inline-flex items-center">
-                      <a href="#" class="text-indigo-700">Links</a>
+                      <a href="#" class="text-indigo-700">Hidden Links</a>
                     </li>
                   </ul>
  </div>               
@@ -135,7 +135,7 @@ include("navbar.php");
 
 <?php
 
-$sql = "SELECT * FROM url_shorten where user_id = 1 and hide = 0";
+$sql = "SELECT * FROM url_shorten where user_id = 1 and hide = 1";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -181,7 +181,7 @@ if (mysqli_num_rows($result) > 0) {
 
         </div>	
 </span>
-<span><a href="edit.php?link=<?php echo $lkid ?>" class="text-sm bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit  </a> <a href="hide_unhide.php?status=hide&link_id=<?php echo $lkid;?>" class="text-sm ml-3 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Hide</a></span>
+<span><a href="edit.php?link=<?php echo $lkid ?>" class="text-sm bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit  </a> <a href="hide_unhide.php?status=unhide&link_id=<?php echo $lkid;?>" class="text-sm ml-3 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Unhide</a></span>
 
 
 </div>
