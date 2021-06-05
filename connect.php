@@ -15,6 +15,7 @@ $base_url='http://bitly.help/u/?redirect=';
 
 
 
+
 $conn = mysqli_connect("localhost",$username,$password,$dbname);
 
 // Check connection

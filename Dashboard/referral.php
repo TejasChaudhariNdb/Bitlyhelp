@@ -59,7 +59,16 @@ include("navbar.php");
 ?>
 
 <style>
-
+pre{
+  white-space: pre-wrap;
+display: block;
+/* padding: 9.5px; */
+/* margin: 0 0 10px; */
+font-size: 13px;
+line-height: 1.42857143;
+color: #333;
+word-break: break-all;
+}
     </style>
 
 <div class="mt-5 container">
@@ -114,7 +123,7 @@ include("navbar.php");
 <div class="bg-white rounded p-3 mb-3 shadow">
 <p class="text-gray-700">The Bitly.help referral program is a great way to spread the word of this great service and to earn even more money with your short links! Refer friends and receive 20% of their earnings for life! </p>
 <div class="link_box bg-gray-200 p-2 rounded mt-3 text-gray-800">
-<code class="text-sm">https://bitly.help/Dashboard/sign.php?reff=<?php echo $reffer_code;?></code>
+<pre class="text-sm" style="white-space: pre-wrap;">https://bitly.help/Dashboard/sign.php?reff=<?php echo $reffer_code;?></pre>
 </div>
 </div>
 
@@ -133,15 +142,15 @@ include("navbar.php");
       <table class="min-w-full table-auto">
         <thead class="justify-between">
           <tr class="bg-gray-800">
-            <th class="px-16 py-2">
+            <th class="mb:px-16 px-2 py-2">
               <span class="text-gray-300">#</span>
             </th>
     
-            <th class="px-16 py-2">
+            <th class="mb:px-16 px-6 py-2">
               <span class="text-gray-300">Name</span>
             </th>
     
-            <th class="px-16 py-2">
+            <th class="mb:px-16 py-2">
               <span class="text-gray-300">Date</span>
             </th>
 
@@ -159,6 +168,9 @@ while($row = mysqli_fetch_assoc($result2)) {
     $i++;
     $name = $row["name"];
     $date = $row['created_at'];
+    
+    $d=strtotime($date);
+
 
 ?>
 
@@ -173,8 +185,8 @@ while($row = mysqli_fetch_assoc($result2)) {
               <span class=" ml-2 font-semibold"><?php echo $name ?></span>
             </td>
 
-            <td class="px-16 py-2">
-              <span><?php echo $date?></span>
+            <td class="ml-2 px-2 py-2">
+              <span><?php echo date("d-M-y h:i:a", $d);?></span>
             </td>
           
           
@@ -207,7 +219,6 @@ while($row = mysqli_fetch_assoc($result2)) {
 
 Copyright © Bitly.help 2021 
 </div>
-
 
 </body>
 </html>
