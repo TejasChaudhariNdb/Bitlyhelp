@@ -1,6 +1,10 @@
 <?php
 
 include("connect.php");
+include("Dashboard/auth_session.php");
+
+
+
 
 $url = $_POST['url'];
 $user_id = 1;

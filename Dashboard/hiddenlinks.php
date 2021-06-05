@@ -40,7 +40,8 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-bo
 
 <?php 
 include("navbar.php");
-// include("sidebar.php");
+echo "<div class='md:flex flex-row'>";
+include("sidebar.php");
 
 ?>
 
@@ -206,7 +207,8 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <!--  -->
-
+</div>
+</div>
 
 
 

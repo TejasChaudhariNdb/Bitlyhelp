@@ -54,7 +54,10 @@ echo mysqli_error($conn);
 
 <?php 
 include("navbar.php");
-// include("sidebar.php");
+
+$active = "reff";
+echo "<div class='md:flex flex-row'>";
+include("sidebar.php");
 
 ?>
 
@@ -213,6 +216,8 @@ while($row = mysqli_fetch_assoc($result2)) {
 
 
 <!--  -->
+
+</div>
 
 <div class="bg-white text-center mt-10 p-3 font-bold border-b border-gray-200 rounded">
 

@@ -1,6 +1,6 @@
 <?php
 
-// include("auth_session.php");
+include("auth_session.php");
 
 ?>
 

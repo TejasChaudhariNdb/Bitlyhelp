@@ -1,4 +1,6 @@
-<?php include("../connect.php")?>
+<?php 
+session_start();
+include("../connect.php")?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +22,26 @@
 
 <?php 
 include("navbar.php");
-// include("sidebar.php");
+echo "<div class='md:flex flex-row'>";
+include("sidebar.php");
+
+$email = $_SESSION['email'];
+
+$sql = "SELECT * FROM user where email = '$email'";
+$result = mysqli_query($conn, $sql);
+
+
+while($row = mysqli_fetch_assoc($result)) {
+
+    $id = $row['id'];
+    $name = $row['name'];
+    $last = $row['last_name'];
+
+    $withdraw_method = $row['withdraw_method'];
+    $withdraw_id = $row['withdraw_id'];
+
+  }
+  
 
 ?>
 
@@ -90,14 +111,14 @@ include("navbar.php");
       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
         First Name
       </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Tejas">
+      <input value="<?php echo $name ?>" name="name" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Tejas">
     
     </div>
     <div class="w-full md:w-1/2 px-3">
       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
         Last Name
       </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Chaudhari">
+      <input value="<?php echo $last ?>" name="last" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Last Name">
     </div>
   </div>
   <div class="flex flex-wrap -mx-3 mb-6">
@@ -160,11 +181,12 @@ State
 <hr/>
 <br>
 <div class="inline-block relative w-full">
-  <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-    <option>Choose</option>
-    <option>PhonePe</option>
-    <option>Google Pay</option>
-    <option>Paytm</option>
+  <select name="with_method" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+    <option value="">Choose</option>
+  <option value="<?php echo $withdraw_method ?>" selected><?php echo $withdraw_method?></option>
+    <option value="phonepe">PhonePe</option>
+    <option value="googlepay">Google Pay</option>
+    <option value="paytm">Paytm</option>
   </select>
   <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
@@ -207,7 +229,7 @@ State
 <h3 class=" text-sm text-gray-600">Payment info</h3>
 <div class="flex flex-wrap -mx-3 mb-6 mt-5">
     <div class="w-full px-3  md:w-1/2 md:mb-0">
-      <input class="appearance-none block w-full  text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="enter payment id ">
+      <input name="with_id" value="<?php echo $withdraw_id ?>"class="appearance-none block w-full  text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="enter payment id ">
    
     </div>
     </div>
@@ -223,8 +245,9 @@ State
 
 
 <!--  -->
-
-
+</div>
+</div>
+ 
 
 
 

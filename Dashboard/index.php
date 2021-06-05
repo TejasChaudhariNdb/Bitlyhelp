@@ -37,6 +37,8 @@ position: relative;
 
 <?php 
 include("navbar.php");
+
+echo "<div class='md:flex flex-row'>";
 include("sidebar.php");
 
 ?>
@@ -118,6 +120,7 @@ include("sidebar.php");
 </div>
 
 
+</div>
 </div>
 </div>
 

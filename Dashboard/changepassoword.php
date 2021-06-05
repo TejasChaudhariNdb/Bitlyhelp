@@ -20,13 +20,14 @@
 
 <?php 
 include("navbar.php");
-// include("sidebar.php");
+
+echo "<div class='md:flex flex-row'>";
+include("sidebar.php");
+
+
+
 
 ?>
-
-<style>
-
-    </style>
 
 <div class="mt-5 container">
 
@@ -74,29 +75,29 @@ include("navbar.php");
 
 <!--  -->
 <div class="bg-white shadow p-2">
-<form class="w-full">
+<form class="w-full" action="cp.php" method="post" name="cp">
  
   <div class="flex flex-wrap -mx-3 mb-6">
     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-       Current Password
+       New Password
       </label>
-      <input type="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-indigo-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="**********">
+      <input name="password" type="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-indigo-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="**********" required />
   
     </div>
  
     <div class="w-full md:w-1/2 px-3">
       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-        New Password
+        Confirm Password
       </label>
-      <input type="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="*********">
+      <input type="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="*********" required/>
     </div>
  
   </div>
 
   <div class="flex justify-center">
-      <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
-        Change Password
+      <button type="submit" class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        Change Password 
       </button>
     </div>
 
@@ -107,6 +108,7 @@ include("navbar.php");
 <!--  -->
 
 
+</div>
 
 
 
