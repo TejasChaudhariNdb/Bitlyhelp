@@ -16,8 +16,10 @@ $password = mysqli_real_escape_string($conn, $password);
                      AND password='" . md5($password) . "'";
         $result = mysqli_query($conn, $query);
         $rows = mysqli_num_rows($result);
+        $row = mysqli_fetch_assoc($result);
         if ($rows == 1) {
             $_SESSION['email'] = $email;
+            $_SESSION['user_id'] = $row['id'];
             // Redirect to user dashboard page
             header("Location: index.php");
         } else {
@@ -26,7 +28,6 @@ $password = mysqli_real_escape_string($conn, $password);
                   <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
                   </div>";
         }
-
         echo mysqli_error($conn);
 
 

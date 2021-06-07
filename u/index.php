@@ -43,7 +43,8 @@ function GetRedirectUrl($slug){
     global $conn;
     $query = "SELECT * FROM url_shorten WHERE short_code = '".addslashes($slug)."' "; 
     $result = $conn->query($query);
-    if ($result->num_rows > 0) {
+
+	if ($result->num_rows > 0) {
    $row = $result->fetch_assoc();
    $hits=$row['hits']+1;
    $sql = "update url_shorten set hits='".$hits."' where id='".$row['id']."' ";
@@ -53,7 +54,8 @@ function GetRedirectUrl($slug){
    else 
     { 
    die("Invalid Link!");
-   }
+
+}
    }
 
 

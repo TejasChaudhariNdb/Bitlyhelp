@@ -9,4 +9,7 @@ if(!isset($_SESSION)) {
         header("Location: login.php");
         exit();
     }
+
+
+// print_r($_SESSION);
 ?>
