@@ -58,7 +58,9 @@
 
         </div>
         <br>
+ 
         <div class="banner-counter">
+ 
                     <div class="counter-item">
                         <h2 class="counter-title"><span class="counter">1,200,000</span>+</h2>
                         <p>Links clicked per day</p>
