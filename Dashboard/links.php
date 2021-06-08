@@ -1,4 +1,8 @@
-<?php include("../connect.php")?>
+<?php 
+
+include("../connect.php");
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +44,9 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-bo
 
 <?php 
 include("navbar.php");
+
+$user_id = $_SESSION['user_id'];
+
 echo "<div class='md:flex flex-row'>";
 include("sidebar.php");
 
@@ -136,7 +143,7 @@ include("sidebar.php");
 
 <?php
 
-$sql = "SELECT * FROM url_shorten where user_id = 1 and hide = 0";
+$sql = "SELECT * FROM url_shorten where user_id = '$user_id' and hide = 0";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -195,7 +202,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 }else {
-  echo "0 results";
+  echo "<p class='bg-white p-3'>No Url</p>";
 }
 
 

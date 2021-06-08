@@ -26,12 +26,21 @@ include("./components/navbar.php");
 $url = $_POST['url'];
 
 if(isset($_POST['url'])){
-    
+
+  
 }else{
 header("location:index.php");    
 }
 
+if(!isset($_SESSION['user_id'])){
+
+  header("location:login.php");    
+ 
+}
+
 $user_id = $_SESSION['user_id'];
+
+
 $url_short_code =  GetShortUrl($url,$user_id);
 $newUrl = $base_url.$url_short_code;
 
