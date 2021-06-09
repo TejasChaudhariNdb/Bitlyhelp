@@ -1,2 +1,15 @@
-RewriteEngine on
-RewriteRule ^([a-z0-9]{6})$ index.php?redirect= [L] 
+#RewriteEngine on
+#RewriteRule ^([a-z0-9]{6})$ index.php?redirect= [L] 
+
+
+
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /u
+
+RewriteRule index\.php?redirect= $ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php?redirect=  [L]
+
