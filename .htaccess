@@ -3,13 +3,24 @@
 
 
 
-Options -Indexes
+#Options -Indexes
+
+#RewriteEngine On
+#RewriteBase /u
+
+#RewriteRule index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^ index.php?redirect=  [L]
+
+
 
 RewriteEngine On
-RewriteBase /u
+RewriteBase /
 
-RewriteRule index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.php?redirect=  [L]
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
 
+RewriteRule ^([^/]+)/([^/]+)/?$ index.php?redirect=$1&brand=$2 [L,QSA]
+RewriteRule ^([^/]+)/?$ index.php?redirect=$1 [L,QSA]
