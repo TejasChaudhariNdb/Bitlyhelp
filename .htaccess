@@ -8,7 +8,7 @@ Options -Indexes
 RewriteEngine On
 RewriteBase /u
 
-RewriteRule index\.php?redirect= $ - [L]
+RewriteRule index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php?redirect=  [L]
