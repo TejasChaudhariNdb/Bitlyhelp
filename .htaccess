@@ -16,7 +16,7 @@
 
 
 RewriteEngine On
-RewriteBase /
+RewriteBase /u
 
 RewriteCond %{REQUEST_FILENAME} -d [OR]
 RewriteCond %{REQUEST_FILENAME} -f
