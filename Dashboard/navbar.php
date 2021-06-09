@@ -23,7 +23,7 @@ include("auth_session.php");
         </li>
         <li class="nav-item">
           <a class="px-3 py-2 flex items-center text-m uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-            <i class="fa fa-money text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Available Balance : $1</span>
+            <i class="fa fa-money text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Available Balance : ₹1</span>
           </a>
           
         </li>

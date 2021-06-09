@@ -20,7 +20,9 @@ $password = mysqli_real_escape_string($conn, $password);
         if ($rows == 1) {
             $_SESSION['email'] = $email;
             $_SESSION['user_id'] = $row['id'];
+
             // Redirect to user dashboard page
+
             header("Location: index.php");
         } else {
             echo "<div class='form'>
