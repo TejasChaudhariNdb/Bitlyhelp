@@ -12,7 +12,7 @@
 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
 <script src="https://use.fontawesome.com/f00636cbad.js"></script>
-
+<meta name="hilltopads-site-verification" content="13a6be0ebb43e38b8570d61867eb67ee6c5de8ff" />
 <!-- <link href="tailwind.css" rel="stylesheet"> -->
 <script>
 
