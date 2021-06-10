@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitly Help | Earn Money By Links</title>
 
-    <link href="css/style.css" rel="stylesheet">
+
+
+<link href="css/style.css" rel="stylesheet">
 <link href="output.css" rel="stylesheet">
 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-
+<script data-ad-client="ca-pub-3791610326848343" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script src="https://use.fontawesome.com/f00636cbad.js"></script>
+
+
 <meta name="hilltopads-site-verification" content="13a6be0ebb43e38b8570d61867eb67ee6c5de8ff" />
 <!-- <link href="tailwind.css" rel="stylesheet"> -->
 <script>
