@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitly.help</title>
-    <script src="https://richinfo.co/js/rp.js"></script>
     <link href="../css/style.css" rel="stylesheet">
 <link href="../output.css" rel="stylesheet">
 <script src="https://use.fontawesome.com/f00636cbad.js"></script>
@@ -68,15 +67,15 @@ function GetRedirectUrl($slug){
 <!-- Ads area -->
 
 
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'cb9a58acb67803507065a16edb41ac1c',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://scallionfib.com/cb9a58acb67803507065a16edb41ac1c/invoke.js"></scr' + 'ipt>');
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-3791610326848343"
+     data-ad-slot="5707836998"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
 <div class="flex justify-center mt-6">
@@ -97,25 +96,44 @@ Ads will show here
 </div>
 
 
-<script type="text/javascript">
-	atOptions = {
-		'key' : '60ebffb36bceab85a8cfac3e4cb34985',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://scallionfib.com/60ebffb36bceab85a8cfac3e4cb34985/invoke.js"></scr' + 'ipt>');
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-3791610326848343"
+     data-ad-slot="5707836998"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
 <br>
 <br>
 
-<script type='text/javascript' src='//scallionfib.com/54/d1/70/54d1708c30351eb028cbfea65a53f5f2.js'></script>
-<br>
-<br>
-<script type='text/javascript' src='//scallionfib.com/20/45/f7/2045f7f06f1e496ba1533732fe86bacc.js'></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-3791610326848343"
+     data-ad-slot="5707836998"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
+<br>
+<br>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-3791610326848343"
+     data-ad-slot="5707836998"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <br>
 
 </div>
@@ -125,18 +143,16 @@ Ads will show here
 <br>
 <!-- Dump Text -->
 
-<script type="text/javascript">
-	atOptions = {
-		'key' : '11dcafdfab370a14e8c36269d5a5325f',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://scallionfib.com/11dcafdfab370a14e8c36269d5a5325f/invoke.js"></scr' + 'ipt>');
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-3791610326848343"
+     data-ad-slot="5707836998"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
-
 <div class="flex justify-center">
 <div class="warp max-w-4xl bg-gray-200">
 <div class="container ">
@@ -162,18 +178,16 @@ Ads will show here
 <p>Desktop Data Recovery:- &nbsp;If we are in a hurry, we just save our data on desktop rather save that particular file in a specific folder. Many times, just because of power shut down, we lost our files from the desktop and we need a frequent way to get our files back. Don’t worry there are so many hard drive data recovery service providers in the market. Laptop Data Recovery:- Laptop data recovery services are also available in the market which helps you to your lost data of personal or business laptop. Outsource to the trustworthy companies which can help you to recover your lost laptop data. External Hard Drive:- Sometimes there is so much data which we can’t store in the existing hard drive of our desktop. Hence, we use external drives to store our precious data securely. If you mistakenly formatted your external drive then there are hard drive data recovery service provider companies which helps you to retrieve your data. SSD Data Recovery:- SSD (Solid-state drives) is also a great way to store your data. But, if you mistakenly deleted your whole data and finding a way to recover it then go for the hard drive data recovery services.</p>
 
 my<h1>MY</h1>
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-3791610326848343"
+     data-ad-slot="5707836998"></ins>
 <script>
-(function(__htas){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = __htas || {};
-s.src = "\/\/apprefaculty.pro\/a.WmZIy\/QC2d9jknZwTq9J6Cb\/2V5slUS_WJQC9yNKD\/IGzmOADRg\/yAMMC\/0w0\/M\/j\/MZ4JO\/DxI\/xqJannBA1Jcs2ihYaMbD2U5elDSmWxQ\/9qNyDvIUzTO\/DUgOyXMTCC0X0JM\/j\/MR4\/OJDHI\/xy";
-l.parentNode.insertBefore(s, l);
-})({})
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
 my
 
 <h5>Conclusion</h5>
