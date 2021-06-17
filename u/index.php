@@ -44,8 +44,8 @@ function addWallet($id){
 
      $sql = "update user set wallet=wallet+0.245 where id='".$id."' ";
      $conn->query($sql);
-     echo "done";          
-     echo $id;          
+     // echo "done";          
+     // echo $id;          
           
      
 

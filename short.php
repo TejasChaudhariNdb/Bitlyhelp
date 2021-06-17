@@ -41,7 +41,7 @@ if(!isset($_SESSION['user_id'])){
 
 $user_id = $_SESSION['user_id'];
 
-echo $user_id;
+// echo $user_id;
 $url_short_code =  GetShortUrl($url,$user_id);
 $newUrl = $base_url.$url_short_code;
 
