@@ -1,6 +1,17 @@
 <?php
 
 include("auth_session.php");
+$user_id =  $_SESSION['user_id'];
+$wallet_url = "SELECT wallet FROM `user` where id = $user_id ";
+
+$result2 = mysqli_query($conn, $wallet_url);
+
+
+
+while($row2 = mysqli_fetch_assoc($result2)) {
+  $wallet =  $row2['wallet'];
+
+}
 
 ?>
 
@@ -23,7 +34,7 @@ include("auth_session.php");
         </li>
         <li class="nav-item">
           <a class="px-3 py-2 flex items-center text-m uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-            <i class="fa fa-money text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Available Balance : ₹1</span>
+            <i class="fa fa-money text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Available Balance : ₹<?php echo $wallet?></span>
           </a>
           
         </li>

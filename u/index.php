@@ -38,6 +38,20 @@ $conn->close();
 }
 
 
+function addWallet($id){
+
+     global $conn;
+
+     $sql = "update user set wallet=wallet+0.245 where id='".$id."' ";
+     $conn->query($sql);
+     echo "done";          
+     echo $id;          
+          
+     
+
+}
+
+
 function increaseHits($hits,$row,$slug){
      global $conn;
 
@@ -51,7 +65,7 @@ $newhit = $hits+1;
 
           $sql = "update url_shorten set hits='".$newhit."' where id='".$row['id']."' ";
           $conn->query($sql);
-          
+          addWallet($row['user_id']);
      } else {
           // echo "Cookie '" . $cookie_name . "' is set!<br>";
           // echo "Value is: " . $_COOKIE[$cookie_name];

@@ -37,19 +37,26 @@ position: relative;
 
 <?php 
 include("../connect.php");
-include("navbar.php");
 
+
+include("navbar.php");
 $user_id =  $_SESSION['user_id'];
 $views_url = "SELECT sum(hits) as views FROM `url_shorten` where user_id = $user_id ";
+// $wallet_url = "SELECT wallet FROM `user` where id = $user_id ";
 
 $result = mysqli_query($conn, $views_url);
+// $result2 = mysqli_query($conn, $wallet_url);
 
 
 while($row = mysqli_fetch_assoc($result)) {
 $views =  $row['views'];
 }
+/*
+while($row2 = mysqli_fetch_assoc($result2)) {
+  $wallet =  $row2['wallet'];
 
-
+}
+*/
 // output data of each row
   // while($row = mysqli_fetch_assoc($result)) {
   //    $lkid = $row['id'];
@@ -119,9 +126,9 @@ include("sidebar.php");
 <div class="grid md:grid-cols-4 grid-cols-2   gap-4">
   <div class="bg-purple-700 text-white  p-4"><p class="text-4xl"><?php echo $views; ?></p><p>Total views</p></div>
   
-  <div class="bg-yellow-400 p-4"><p class="text-4xl">₹0</p><p>Total Earnings</p></div>
+  <div class="bg-yellow-400 p-4"><p class="text-4xl">₹<?php echo $wallet;?></p><p>Total Earnings</p></div>
   <div class="bg-red-600 text-white  p-4"><p class="text-4xl">₹0</p><p>Referral Earnings</p></div>
-  <div class="bg-gray-900 text-white p-4"><p class="text-4xl">0</p><p>Average CMP</p></div>
+  <div class="bg-gray-900 text-white p-4"><p class="text-4xl">0.245</p><p>Average CMP</p></div>
 
 </div>
 
