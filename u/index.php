@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<?php include("../components/navbar.php")?>    
+<?php include("navbar.php")?>    
 <style>
 p{
     margin: 0 0 10px;
@@ -38,6 +38,29 @@ $conn->close();
 }
 
 
+function increaseHits($hits,$row,$slug){
+     global $conn;
+
+$newhit = $hits+1;
+
+     $cookie_name = $slug;
+     $cookie_value = "true";
+     setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+     if(!isset($_COOKIE[$cookie_name])) {
+          // echo "Cookie named '" . $cookie_name . "' is not set!";
+
+          $sql = "update url_shorten set hits='".$newhit."' where id='".$row['id']."' ";
+          $conn->query($sql);
+          
+     } else {
+          // echo "Cookie '" . $cookie_name . "' is set!<br>";
+          // echo "Value is: " . $_COOKIE[$cookie_name];
+     }
+     
+
+  
+}
+
 function GetRedirectUrl($slug){
     global $conn;
     $query = "SELECT * FROM url_shorten WHERE short_code = '".addslashes($slug)."' "; 
@@ -45,11 +68,16 @@ function GetRedirectUrl($slug){
 
 	if ($result->num_rows > 0) {
    $row = $result->fetch_assoc();
-   $hits=$row['hits']+1;
-   $sql = "update url_shorten set hits='".$hits."' where id='".$row['id']."' ";
-   $conn->query($sql);
-   return $row['url'];
-   }
+   $hits=$row['hits'];
+//    $hits=$row['hits']+1;
+//    $sql = "update url_shorten set hits='".$hits."' where id='".$row['id']."' ";
+//    $conn->query($sql);
+
+increaseHits($hits,$row,$slug);
+
+return $row['url'];
+
+}
    else 
     { 
    die("Invalid Link!");
